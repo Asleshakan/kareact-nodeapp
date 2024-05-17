@@ -23,7 +23,7 @@ jobs:
 
       - name: Install frontend dependencies and build client
         run: |
-          cd client
+          
           npm install
           npm run build
 
