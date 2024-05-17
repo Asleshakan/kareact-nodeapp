@@ -23,9 +23,9 @@ jobs:
 
       - name: Install frontend dependencies and build client
         run: |
-          
           npm install
           npm run build
+        working-directory: ./client
 
       - name: Move build files to server directory
         run: mv client/build server/build
